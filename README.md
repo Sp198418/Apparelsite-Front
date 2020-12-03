@@ -89,10 +89,20 @@ view items by selected category
 * [✔] Create DataBase
 * [] Create a landing/homepage
 * [] Create a clothing list
+    * [] Create item card
+    * [] include add to cart button
 * [] Create a checkout page
 * [] Create a NavBar
 * [] user should be able to search, edit and add items
 
+
+
+
+Update products SET imgurl = 'https://m.media-amazon.com/images/I/71eSf903QQL._AC_SR700,525_.jpg' WHERE id= 1,
+Update products SET imgurl = 'https://img1.cfcdn.club/73/25/73ea0d9a32b267c3a3c16827e5362125_350x350.jpg' WHERE id= 2,
+Update products SET imgurl = 'https://cdna.lystit.com/photos/stefaniamode/53b0ebcb/fendi-BLACKplain-Bag-Bug-Eyes-Hoodie.jpeg' WHERE id= 3,
+Update products SET imgurl = 'https://i.pinimg.com/originals/b5/b3/fc/b5b3fcbdb8205e22ea4e6a8b2380608f.png' WHERE id= 6,
+Update products SET imgurl = 'https://www.bootonclub.com/wp-content/uploads/2018/04/IMG_3944.jpg' WHERE id= 5;
 
 
 

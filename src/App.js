@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
-import Test from './components/test';
+import LandingPage from './components/Landingpage/Landingpage';
+import NavBar from './components/NavBar/NavBar';
+// import LandingPage from './components/Landingpage';
 
 function App() {
   return (
     <div className="App">
-      <Test />
+       <NavBar/>
+      <LandingPage />
     </div>
   );
 }
