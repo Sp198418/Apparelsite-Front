@@ -1,0 +1,15 @@
+.landingpageimg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    
+      
+}
+
+img{
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}

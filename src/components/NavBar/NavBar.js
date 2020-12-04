@@ -12,6 +12,7 @@ function NavBar(){
             <Link className='link' to='Women' smooth={true} >Women</Link>
             <Link className='link' to='Kids' smooth={true} >Kids</Link>
             <Link className='link' to='Accessories' smooth={true} >Accessories</Link>
+            
         </div>
     </div>
     )

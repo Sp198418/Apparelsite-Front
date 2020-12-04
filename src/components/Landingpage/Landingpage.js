@@ -26,10 +26,12 @@ class LandingPage extends Component {
             <div>{this.state.products ? this.state.products.map(product =>{ {
                 
                 return (
-                    <div>
-                        <img src={product.imgurl} />
-                        <h1>{product.name}</h1>
-                    </div>)
+                    <div className ='landingpageimg'>
+                        <img src={product.imgurl} height='20%' width='20%' />
+                        <h2>{product.name}</h2>
+                        <h3>{product.price}</h3>
+                    </div>
+                    )
             }}
             ) : 'Did not fetch'}</div>
             
