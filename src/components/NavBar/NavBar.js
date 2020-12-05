@@ -3,6 +3,7 @@ import './NavBar.css';
 import React from 'react';  
 import {Link} from 'react-scroll'; 
 
+
 function NavBar(){
     return (   
     <div className ="NavBar">
@@ -12,6 +13,8 @@ function NavBar(){
             <Link className='link' to='Women' smooth={true} >Women</Link>
             <Link className='link' to='Kids' smooth={true} >Kids</Link>
             <Link className='link' to='Accessories' smooth={true} >Accessories</Link>
+            <a className='link' href='/LandingPage' >Product Page</a>
+          
             
         </div>
     </div>

@@ -1,15 +1,23 @@
 .landingpageimg{
+    background-color: rgb(172, 155, 155);
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     flex-wrap: wrap;
     margin: 10px;
     justify-content: center;
+    padding:10px;
     
       
 }
+ .Productcontainer{
+     display: flex;
+     padding-top: 100px;
+     flex-wrap: wrap;
 
-img{
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
+ }
+
+ .landingpageimg img{
+     max-width: 200px;
+     
+ }
