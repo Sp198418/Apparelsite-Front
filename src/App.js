@@ -2,21 +2,22 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
-import LandingPage from './components/Landingpage/Landingpage';
-import Landingpage from './components/Landingpage/Landingpage';
+import ProductPage from './components/ProductPage/ProductPage';
+
+
 import NavBar from './components/NavBar/NavBar';
 
-// import LandingPage from './components/Landingpage';
+// import ProductPage from './components/ProductPage';
 
 function App() {
   return (
     <div className="App">
        <NavBar/>
-       <LandingPage/>
+       <ProductPage/>
       <Router>
         <Switch>
-          {/* <Route path= "LandingPage" component= {Landingpage}/> */}
-          <Route exact path= "LandingPage" component= {Landingpage}/>
+          {/* <Route path= "ProductPage" component= {ProductPage}/> */}
+          <Route exact path= "ProductPage" component= {ProductPage}/>
         </Switch>
       </Router>
     </div>

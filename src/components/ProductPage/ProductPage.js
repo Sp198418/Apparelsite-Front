@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Landingpage.css'
+import './ProductPage.css'
 
 
-class LandingPage extends Component {
+class ProductPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -80,4 +80,4 @@ class LandingPage extends Component {
 }
 
 
-export default LandingPage;
+export default ProductPage;
