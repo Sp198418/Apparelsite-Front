@@ -56,9 +56,13 @@ class ProductPage extends Component {
                 return (
                     <>
                         <div className='landingpageimg'>
+                        
                             <img src={product.imgurl}  />
-                            <h2>{product.name}</h2>
-                            <h3>{product.price}</h3>
+                            <h2><span>{product.name}</span>
+                            
+                            <span>{product.price}</span></h2>
+                            
+                        
                         </div>
 
                     </>
