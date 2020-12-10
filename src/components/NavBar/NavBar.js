@@ -3,13 +3,20 @@ import './NavBar.css';
 import React from 'react';  
 import {Link} from 'react-scroll'; 
 
+// create functions here - these functions will act on the state within Home
+// for example props.changeCategory()
+function NavBar(props){
 
-function NavBar(){
+    const handleClick = (cat) =>{
+        console.log("here")
+        props.changeCategory(cat)
+    }
+
     return (   
     <div className ="NavBar">
         <Logo/>
         <div className = 'navLinks'>
-            <Link className='link' to='Men' smooth={true} >Men</Link>
+            <div onClick={() => handleClick('men')}>Men</div>
             <Link className='link' to='Women' smooth={true} >Women</Link>
             <Link className='link' to='Kids' smooth={true} >Kids</Link>
             <Link className='link' to='Accessories' smooth={true} >Accessories</Link>

@@ -16,7 +16,7 @@ class ProductPage extends Component {
 
     componentDidMount() {
         // return fetch(`http://3.83.45.247:3030/products`)
-        return fetch(`http://localhost:3030/products`)
+         fetch(`http://localhost:3030/products`)
             .then(res => res.json())
             .then(res => this.setState({ products: res }))
             .catch(err => console.log(err))
@@ -46,29 +46,33 @@ class ProductPage extends Component {
 
     }
 
+    showProducts(){
+        return this.state.products ? this.state.products.map((product, key) => {
+
+            return (
+                
+                    <div className='landingpageimg' key={key}>
+                    
+                        <img src={product.imgurl}  />
+                        <p>{product.category}</p>
+                        <h2><span>{product.name}</span>
+                        
+                        <span>{product.price}</span></h2>
+                        {/* <button onclick= > Add to cart </button> */}
+                        
+                    
+                    </div>
+
+            )
+        }) : 'Did not fetch'
+    }
+        
 
     render() {
-
         return (
-
-            <div className= "Productcontainer">{this.state.products ? this.state.products.map(product => {
-
-                return (
-                    <>
-                        <div className='landingpageimg'>
-                        
-                            <img src={product.imgurl}  />
-                            <h2><span>{product.name}</span>
-                            
-                            <span>{product.price}</span></h2>
-                            
-                        
-                        </div>
-
-                    </>
-
-                )
-            }) : 'Did not fetch'}
+            <div className= "Productcontainer">
+                {this.showProducts()}
+                {console.log(this.props.category)}
                 <button onClick = {this.createNewApparel}>Create New Apparel</button>
                 <input name="name" placeholder="name" onChange={this.inputChange} />
                 <input name="type" placeholder="type" onChange={this.inputChange} />
@@ -78,7 +82,6 @@ class ProductPage extends Component {
                 <input name="imgurl" placeholder="imgurl" onChange={this.inputChange} />
                 <input name="size" placeholder="size" onChange={this.inputChange} />
             </div>
-
         )
     }
 }

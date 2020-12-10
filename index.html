@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliver Crown apparel!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Full Stack App with checkout</h1>
+
+
+  <button onclick=addProduct(event)>Add Product</button>
+  <br/>
+  <input id="name" placeholder="name" value=""/>
+  <input id="type" placeholder="type" value=""/>
+  <input id="category" placeholder="category" value=""/>
+  <input id="price" placeholder="price" value=""/>
+  <input id="count" placeholder="count" value=""/>
+  <br/>
+
+  <p>To edit, fill in the changes to be made above (all fields are required) and pass the Product ID below.</p>
+  <button onclick=editProduct(event)>Edit Product</button>
+  <input id="id" placeholder="ID" value=""/>
+  <hr/>
+
+  <button onclick=getProduct(event)>Search</button>
+
+  <div id="allProduct"></div>
+
+  <div id="singleView">
+    <button id="closeButton" onclick=hidePopup(event)>X</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
